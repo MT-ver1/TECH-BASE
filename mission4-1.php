@@ -119,7 +119,7 @@ EOT;
 			</form>
 		</p>
 		<p>
-			<h2>登録項目編集欄</h2>
+			<h2>投稿内容編集欄</h2>
 			<form method="post" action="mission4-1.php">
 				編集したい投稿番号とそのパスワードを記入してください。<br>
 				投稿番号：<br>
@@ -135,7 +135,7 @@ EOT;
 			</form>
 		</p>
 		<p>
-			<h2>登録項目削除欄</h2>
+			<h2>投稿内容削除欄</h2>
 			<form method="post" action="mission4-1.php">
 				削除したい投稿番号とそのパスワードを記入してください。<br>
 				投稿番号：<br>
