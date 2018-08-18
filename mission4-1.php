@@ -6,14 +6,14 @@ $password='パスワード';
 
 //メイン画面
 if(!isset($_POST['name']) && empty($_POST['ch_num']) && empty($_POST['ch_pass']) && empty($_POST['del_num']) && empty($_POST['del_pass'])){
-echo "メイン画面<br>";
+//echo "メイン画面<br>";
 	echo_main("","","","");
 	exit;
 }
 
 //投稿内容登録処理
 else if(!empty($_POST['pass'])){
-echo "投稿内容登録処理<br>";
+//echo "投稿内容登録処理<br>";
 	echo_reg_comment($_POST['name'],$_POST['txt'],$_POST['pass']);
 	echo_main("","","","");
 	exit;
@@ -21,13 +21,13 @@ echo "投稿内容登録処理<br>";
 
 //投稿内容編集処理
 else if(!empty($_POST['ch_num']) && !empty($_POST['ch_pass']) && !isset($_POST['ch2'])){
-echo "投稿内容編集処理<br>";
+//echo "投稿内容編集処理<br>";
 	$parts=echo_re_comment($_POST['ch_num'],$_POST['ch_pass']);
 	echo_main($parts[0],$parts[1],$parts[2],$parts[3]);
 	exit;
 }
 else if(isset($_POST['ch2'])){
-echo "登録<br>";
+//echo "登録<br>";
 	echo_reg_recomment($_POST['ch_num'],$_POST['ch_name'],$_POST['ch_txt'],$_POST['ch_pass']);
 	echo_main("","","","");
 	exit;
@@ -35,7 +35,7 @@ echo "登録<br>";
 
 //投稿内容削除処理
 else if(!empty($_POST['del_num']) && !empty($_POST['del_pass'])){
-echo "投稿内容削除処理<br>";
+//echo "投稿内容削除処理<br>";
 	echo_delete_comment($_POST['del_num'],$_POST['del_pass']);
 	echo_main("","","","");
 	exit;
