@@ -6,9 +6,9 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 
-$dbname="testdb1";
-$tb_user="user";
-$tb_comment="comment";
+$dbname="データベース名";
+$tb_user="ユーザ名";
+$tb_comment="テーブル名";
 $user=$_SESSION['user'];
 
 echo"$user さまログイン中<br>";
