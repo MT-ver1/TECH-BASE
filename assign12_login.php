@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$dbname="testdb1";
-$tb_user="user";
-$tb_comment="comment";
+$dbname="データベース名";
+$tb_user="ユーザー名";
+$tb_comment="テーブル名";
 
 //初期画面
 if(!isset($_POST['user']) && !isset($_POST['mk_user']) && !isset($_POST['dl_user'])){
